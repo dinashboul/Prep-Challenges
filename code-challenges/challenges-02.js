@@ -9,12 +9,13 @@
 //  Output: ['Python','Ruby','JS','C#']
 
 const reverseArray = (arr) => {
-  // write your code here
-  const reverse =[];
-  for(let i =0 ; i<arr.length ; i++){
-    reverse.push(arr[arr.length-1-i]);
+  const reverseArr =[];
+  for(let i =0 ; i<arr.length;i++){
+    reverseArr.unshift(arr[i]);
+
   }
-  return reverse;
+  return reverseArr;
+  // write your code here
 };
 
 // -------------------------------------------------------------------------------------------------------
@@ -30,10 +31,10 @@ const reverseArray = (arr) => {
 
 const arrInc = (arr) => {
   const result = [];
-  // write your code here
-  for(let j =0 ; j<arr.length ; j++){
+  for(let j = 0 ;j <arr.length ; j++){
     result.push(arr[j]+10);
   }
+  // write your code here
   return result;
 };
 
